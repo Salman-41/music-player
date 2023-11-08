@@ -49,9 +49,6 @@ function pauseSong() {
   music.pause();
 }
 
-//Play or Pause  Event Listener
-playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
-
 // Update Dom
 function loadSong(song) {
   title.textContent = song.displayName;
@@ -89,3 +86,6 @@ loadSong(songs[songIndex]);
 //Event Listeners
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
+
+//Play or Pause  Event Listener
+playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
