@@ -6,6 +6,15 @@ const prevBtn = document.getElementById('prev');
 const playBtn = document.getElementById('play');
 const nextBtn = document.getElementById('next');
 
+// Music
+const songs = [
+  {
+    name: 'jacinto-1',
+    displayName: 'Electric Chill Machine',
+    artist: 'Jacinto Design',
+  },
+];
+
 // Check if Playing
 let isPlaying = false;
 
