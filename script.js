@@ -90,6 +90,7 @@ function updateProgressBar(e) {
   const { duration, currentTime } = e.srcElement;
   //Update Progress Bar width
   const progressPercent = (currentTime / duration) * 100;
+  progress.style.width = `${progressPercent}%`;
 }
 
 //Event Listeners
