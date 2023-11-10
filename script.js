@@ -86,7 +86,11 @@ function prevSong() {
 loadSong(songs[songIndex]);
 
 //Update progress Bar & Time
-function updateProgressBar(e) {}
+function updateProgressBar(e) {
+  const { duration, currentTime } = e.srcElement;
+  //Update Progress Bar width
+  const progressPercent = (currentTime / duration) * 100;
+}
 
 //Event Listeners
 prevBtn.addEventListener('click', prevSong);
