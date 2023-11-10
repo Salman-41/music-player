@@ -88,6 +88,7 @@ loadSong(songs[songIndex]);
 //Event Listeners
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
+music.addEventListener('timeupdate', updateProgressBar);
 
 //Play or Pause  Event Listener
 playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
