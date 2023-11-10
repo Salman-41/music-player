@@ -85,6 +85,9 @@ function prevSong() {
 // On Load - Select First Song
 loadSong(songs[songIndex]);
 
+//Update progress Bar & Time
+function updateProgressBar(e) {}
+
 //Event Listeners
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
