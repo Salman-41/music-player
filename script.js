@@ -90,16 +90,32 @@ loadSong(songs[songIndex]);
 //Update progress Bar & Time
 function updateProgressBar(e) {
   const { duration, currentTime } = e.srcElement;
-  //Update Progress Bar width
-  const progressPercent = (currentTime / duration) * 100;
-  progress.style.width = `${progressPercent}%`;
-  //Calculate display for duration
-  const durationMinutes = Math.floor(duration / 60);
-  let durationSeconds = Math.floor(duration % 60);
-  if (durationSeconds < 10) {
-    durationSeconds = `0${durationSeconds}`;
+
+  if (!isNaN(duration) && !isNaN(currentTime)) {
+    // Update Progress Bar width
+    const progressPercent = (currentTime / duration) * 100;
+    progress.style.width = `${progressPercent}%`;
+
+    // Calculate display for duration
+    const durationMinutes = Math.floor(duration / 60);
+    let durationSeconds = Math.floor(duration % 60);
+
+    if (durationSeconds < 10) {
+      durationSeconds = `0${durationSeconds}`;
+    }
+
+    durationEl.textContent = `${durationMinutes}:${durationSeconds}`;
+
+    // Calculate display for current time
+    const currentMinutes = Math.floor(currentTime / 60);
+    let currentSeconds = Math.floor(currentTime % 60);
+
+    if (currentSeconds < 10) {
+      currentSeconds = `0${currentSeconds}`;
+    }
+
+    currentTimeEl.textContent = `${currentMinutes}:${currentSeconds}`;
   }
-  durationEl.textContent = `${durationMinutes}:${durationSeconds}}`;
 }
 
 //Event Listeners
