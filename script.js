@@ -92,6 +92,10 @@ function updateProgressBar(e) {
   //Update Progress Bar width
   const progressPercent = (currentTime / duration) * 100;
   progress.style.width = `${progressPercent}%`;
+  //Calculate display for duration
+  const durationMinutes = Math.floor(duration / 60);
+  let durationSeconds = Math.floor(duration % 60);
+  if (durationSeconds < 10) durationSeconds = `0${durationSeconds}`;
 }
 
 //Event Listeners
