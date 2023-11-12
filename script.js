@@ -117,6 +117,7 @@ function updateProgressBar(e) {
 function setProgressBar(e) {
   const width = this.clientWidth;
   const clickX = e.offsetX;
+  const { duration } = music;
 }
 
 //Event Listeners
