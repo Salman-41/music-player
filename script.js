@@ -53,7 +53,7 @@ function pauseSong() {
   music.pause();
 }
 
-// Update Dom
+//Update Dom
 function loadSong(song) {
   title.textContent = song.displayName;
   artist.textContent = song.artist;
