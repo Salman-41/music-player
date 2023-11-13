@@ -10,7 +10,7 @@ const prevBtn = document.getElementById('prev');
 const playBtn = document.getElementById('play');
 const nextBtn = document.getElementById('next');
 
-// Music
+//Music
 const songs = [
   {
     name: 'jacinto-1',
@@ -127,5 +127,6 @@ nextBtn.addEventListener('click', nextSong);
 music.addEventListener('timeupdate', updateProgressBar);
 progressContainer.addEventListener('click', setProgressBar);
 music.addEventListener('ended', nextSong);
+
 //Play or Pause  Event Listener
 playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
