@@ -33,3 +33,18 @@ const songs = [
   // Add more songs as needed
 ];
 ```
+
+# Project Features
+
+- **Play/Pause Functionality**: Click on the play/pause button to control the playback of the music.
+- **Next/Previous Song**: Navigate between songs using the next and previous buttons.
+- **Progress Bar**: Track the progress of the currently playing song with the progress bar.
+- **Dynamic Song Loading**: Song information and audio source dynamically update when changing songs.
+
+# How to Use
+
+1. Clone or download the repository to your local machine.
+2. Open the `index.html` file in a web browser.
+3. Enjoy the music playback and experiment with the player controls.
+
+Feel free to customize and enhance the project according to your preferences!
