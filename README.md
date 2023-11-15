@@ -1,4 +1,4 @@
-# Music Player README
+# Music Player
 
 This is a simple music player project built with HTML, CSS, and JavaScript. It allows users to play and control music, displaying song information, progress bar, and duration. Here's a quick guide to understand and use the project:
 
@@ -34,14 +34,14 @@ const songs = [
 ];
 ```
 
-# Project Features
+## Project Features
 
 - **Play/Pause Functionality**: Click on the play/pause button to control the playback of the music.
 - **Next/Previous Song**: Navigate between songs using the next and previous buttons.
 - **Progress Bar**: Track the progress of the currently playing song with the progress bar.
 - **Dynamic Song Loading**: Song information and audio source dynamically update when changing songs.
 
-# How to Use
+## How to Use
 
 1. Clone or download the repository to your local machine.
 2. Open the `index.html` file in a web browser.
